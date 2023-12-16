@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Ephesis&family=Exo+2:ital,wght@0,200;0,600;1,100;1,300;1,500&family=Hedvig+Letters+Serif:opsz@12..24&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,900&family=Ubuntu:ital,wght@0,300;1,300;1,700&family=Whisper&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Guide</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="bg-image img-fluid" 
+    style="background-image: url('https://images.wallpaperscraft.com/image/single/eiffel_tower_paris_france_122444_2560x1024.jpg');
+           height: 100vh">
+    <nav class="navbar navbar-expand-lg   mt-3">
+        <div class="container">
+          <a class="navbar-brand bs-warning-text-emphasis" href="#"><h1>Travel <span>Guide</span></h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Packages
+                </a>
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#">Transport</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#">Hotels</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Support</a>
+                  </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+      <!-- enquiry -->
+      <div class="enquiry">
+
+        <h1>Travel</h1>
+        <h1 class="desing">for enough,</h1>
+        <h1>You meet</h1>
+        <h1 class="desing">Yourself</h1>
+      </div>
+    </div>
+    <!-- modal -->
+    <!-- Button trigger modal -->
+<div class="text-center">
+    <button type="button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Enquiry
+      </button>
+</div>
+  <h1 class="text-center">PACKAGES</h1>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">PLEASE SHARE YOUR DETAILS</h1>
+          <button type="button " class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- form -->
+          <form>
+            <div class="mb-3">
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Phone number</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="disabledSelect" class="form-label"></label>
+                <select id="disabledSelect" class="form-select">
+                  <option>your preferances</option>
+                </select>
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Number of members</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Messages</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+          </form>
+          
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button " class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- cards -->
+<div class="container">
+<div class="row">
+<div class="card col" style="width: 18rem;">
+    <img width="350px" height="450px" src="https://wallpapercave.com/wp/wp6905437.jpg" class="card-img-top mt-5 rounded float-start " alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="text-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+    </div>
+  </div>
+  <div class="card col" style="width: 18rem;">
+    <img width="350px" height="450px" src="https://etimg.etb2bimg.com/photo/93343457.cms" class="card-img-top mt-5 rounded float-start " alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="text-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+    </div>
+  </div>
+  <div class="card col" style="width: 18rem;">
+    <img width="350px" height="450px" src="https://adm.dookinternational.com/dook/images/package/Lskpgkn71w1649140426.jpg" class="card-img-top mt-5 rounded float-start" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="text-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+    </div>
+  </div>
+  <div class="card col" style="width: 18rem;">
+    <img width="350px" height="450px" src="https://i.pinimg.com/originals/ff/4f/d6/ff4fd6097c6b326a7087fd3dc3181dab.jpg" class="card-img-top mt-5 rounded float-start" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div class="text-center"><a href="#" class="btn btn-primary ">BOOK NOW</a></div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- more packages -->
+<div class="more">
+    <button type="button" class="btn btn-success text-center">More Packages</button> 
+</div> 
+<!-- special tour -->
+<h1 class="text-center">SPECIAL KERALA FASTIVAL TOURS</h1>
+<!-- slide -->
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img  src="https://i.ytimg.com/vi/JOoIF2XPMqs/maxresdefault.jpg" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://pickyourtrail.com/blog/wp-content/uploads/2020/09/manyu-varma-mM6cUV3B9M8-unsplash-scaled.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.tripsavvy.com/thmb/Mkbe-68gRchEsgMo6mXd3R7dnWs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-570945997-593957ac5f9b58d58a4c45bf.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- add section -->
+  <div class="add-section">
+    <iframe width="900" height="430" src="https://www.youtube.com/embed/R83BlU5nnbs?si=HEGuqu8S69-D6DtO&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="container">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+      <!-- <div class="col-6"><img class="img-fluid" src="https://wallpapercave.com/wp/wp7889092.jpg" alt=""></div> -->
+      <!-- <div class="col-6"><img class="img-fluid" src="https://www.holidify.com/blog/wp-content/uploads/2016/01/Bali_theyyam_Payyannur.jpg" alt=""></div> -->
+  
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+      <div class="col-6 col-md-4"><img   class="img-fluid" src="https://www.swantour.com/blogs/wp-content/uploads/2019/04/Festivals-of-Kerala.jpg" alt=""></div>
+      <div class="col-6 col-md-4"><img   class="img-fluid" src="https://www.swantour.com/blogs/wp-content/uploads/2019/04/Festivals-of-Kerala.jpg" alt=""></div>
+      <div class="col-6 col-md-4"><img   class="img-fluid" src="https://www.swantour.com/blogs/wp-content/uploads/2019/04/Festivals-of-Kerala.jpg" alt=""></div>
+    </div>
+  
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+      <div class="col-6"><img   class="img-fluid" src="https://www.swantour.com/blogs/wp-content/uploads/2019/04/Festivals-of-Kerala.jpg" alt=""></div>
+      <div class="col-6"><img   class="img-fluid" src="https://www.swantour.com/blogs/wp-content/uploads/2019/04/Festivals-of-Kerala.jpg" alt=""></div>
+     </div>
+     </div>
+</div>
+</div>
+<!-- card2 -->
+<h1 class="text-center m-5">NORTH INDIAN TOURS</h1>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+         <div class="our-team">
+            <div class="place">
+                <div class="pic">
+                    <img class="img-fluid rounded" src="https://www.tourmyindia.com/states/jammu-kashmir/image/shikara-ride-jk2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="titel">Kashmir</h3>
+                    <span class="price text-light rounded">&#8377;12000</span>
+                    <br>
+                    <button type="button" class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+         </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+               <div class="place">
+                   <div class="pic">
+                       <img class="img-fluid rounded" src="https://www.fabhotels.com/blog/wp-content/uploads/2018/09/Red-Fort.jpg" alt="">
+                   </div>
+                   <div class="content">
+                       <h3 class="titel">New Delhi</h3>
+                       <span class="price text-light">&#8377;11000</span>
+                       <br>
+                       <button type="button" class="btn btn-primary">Book Now</button>
+                   </div>
+               </div>
+            </div>
+           </div>
+           <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+               <div class="place">
+                   <div class="pic">
+                       <img class="img-fluid rounded" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Taj-mahal.jpg" alt="">
+                   </div>
+                   <div class="content">
+                       <h3 class="titel">Agra</h3>
+                       <span class="price text-light">&#8377;15000</span>
+                       <br>
+                       <button type="button" class="btn btn-primary">Book Now</button>
+                   </div>
+               </div>
+            </div>
+           </div>
+           <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+               <div class="place">
+                   <div class="pic">
+                       <img class="img-fluid rounded" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/09/Haridwar1.jpg" alt="">
+                   </div>
+                   <div class="content">
+                       <h3 class="titel">Haridwar and Rishikesh</h3>
+                       <span class="price text-light">&#8377;10000</span>
+                       <br>
+                       <button type="button" class="btn btn-primary">Book Now</button>
+                   </div>
+               </div>
+            </div>
+           </div>
+    </div>
+   </div>
+<!-- OUR PREMIUM -->
+<h1 class="text-center m-5">OUR PREMIUM FEATUES</h1>
+<h5 class="text-center ">we will make your dream come true</h5>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+         <div class="our-team">
+            <div class="place">
+                <div class="pic">
+                    <img class="img-fluid rounded" src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Features/500_3959.jpg&w=700&q=90&c=1" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="titel">BIKE RIDE</h3>
+                    <span class="price text-light rounded"><a href="">Learn More</a></span>
+                    <br>
+                    <!-- <button type="button" class="btn btn-primary">Book Now</button> --> 
+                </div>
+            </div>
+         </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+               <div class="place">
+                   <div class="pic">
+                       <img class="img-fluid rounded" src="data:image/jpeg;base64,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" alt="">
+                   </div>
+                   <div class="content">
+                       <h3 class="titel">CAPM FIRE</h3>
+                       <span class="price text-light"><a href="">Learn More</a></span>
+                       <br>
+                       <!-- <button type="button" class="btn btn-primary">Book Now</button> -->
+                   </div>
+               </div>
+            </div>
+           </div>
+           <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+               <div class="place">
+                   <div class="pic">
+                       <img class="img-fluid rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYR48YGoU3JgYEQm-yI4WfcDZXkr6DfqRsbA&usqp=CAU" alt="">
+                   </div>
+                   <div class="content">
+                       <h3 class="titel">24/7 SUPPORT</h3>
+                       <span class="price text-light"><a href="">Learn More</a></span>
+                       <br>
+                       <!-- <button type="button" class="btn btn-primary">Book Now</button> -->
+                   </div>
+               </div>
+            </div>
+           </div>
+           <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+               <div class="place">
+                   <div class="pic">
+                       <img class="img-fluid rounded" src="https://imageio.forbes.com/specials-images/imageserve/1071462356/Tour-Guide-Talking-about-the-Architecture/960x0.jpg?format=jpg&width=960" alt="">
+                   </div>
+                   <div class="content">
+                       <h3 class="titel">TOUR GUIDE</h3>
+                       <span class="price text-light"><a href="">Learn More</a></span>
+                       <br>
+                       <!-- <button type="button" class="btn btn-primary">Book Now</button> -->
+                   </div>
+               </div>
+            </div>
+           </div>
+    </div>
+   </div>
+<!-- card 3 -->
+<div class="card-group m-5">
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1319763830/photo/portrait-of-smiling-mixed-race-woman-looking-at-camera.jpg?s=612x612&w=0&k=20&c=L0d04sc89UuLW0G80UCu4egl0tQwyl8PLKsIZotbP_U=" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://media.istockphoto.com/id/1096419446/photo/modern-cheerful-business-man-in-deep-blue-shirt-standing-with-crossed-arms-isolated-on-gray.jpg?s=612x612&w=0&k=20&c=r4f-QedoEjL9KU-H96imU5UI5594wFUj2A9PgD8JXGY=" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://www.realmenrealstyle.com/wp-content/uploads/2023/08/Attractive-Older-Men-Are-Confident.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container1">
+        <div class="row1">
+            <div class="footer-col">
+                <h4>
+                    Company
+                </h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">gaming headphones</a></li>
+                    <li><a href="#">gaming chair</a></li>
+                    <li><a href="#">gaming pc</a></li>
+                    <li><a href="#">gaming phone</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
